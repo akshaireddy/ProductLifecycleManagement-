@@ -1,0 +1,98 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "ProductLifecycleManagement": {
+        "src": "contracts/PLM.sol:4",
+        "version": {
+          "withMetadata": "9be9bdb97f1b9c414f4296594e2f059a22836eaef5b7937bfdf6c9bd3e81a42a",
+          "withoutMetadata": "9ecd13e2f0cd04141fa4074de1701fff8d46cbf7b29f274aaed7e7ded45164b7",
+          "linkedWithoutMetadata": "9ecd13e2f0cd04141fa4074de1701fff8d46cbf7b29f274aaed7e7ded45164b7"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "createProduct(string)",
+          "updateProductStage(uint256,uint8)",
+          "getProduct(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProductLifecycleManagement",
+            "src": "contracts/PLM.sol:20"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProductLifecycleManagement",
+              "label": "products",
+              "type": "t_mapping(t_uint256,t_struct(Product)20_storage)",
+              "src": "contracts/PLM.sol:15"
+            },
+            {
+              "contract": "ProductLifecycleManagement",
+              "label": "productCount",
+              "type": "t_uint256",
+              "src": "contracts/PLM.sol:16"
+            }
+          ],
+          "types": {
+            "t_mapping(t_uint256,t_struct(Product)20_storage)": {
+              "label": "mapping(uint256 => struct ProductLifecycleManagement.Product)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_struct(Product)20_storage": {
+              "label": "struct ProductLifecycleManagement.Product",
+              "members": [
+                {
+                  "label": "productId",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "name",
+                  "type": "t_string_storage"
+                },
+                {
+                  "label": "stage",
+                  "type": "t_enum(Stage)8"
+                },
+                {
+                  "label": "owner",
+                  "type": "t_address"
+                },
+                {
+                  "label": "createdTimestamp",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_enum(Stage)8": {
+              "label": "enum ProductLifecycleManagement.Stage",
+              "members": [
+                "Created",
+                "Design",
+                "Manufacturing",
+                "Testing",
+                "Distribution",
+                "Completed"
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}

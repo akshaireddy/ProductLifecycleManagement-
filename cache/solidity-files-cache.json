@@ -1,0 +1,39 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/akshai/templates/Product_lifecycle_management/contracts/PLM.sol": {
+      "lastModificationDate": 1691542505181,
+      "contentHash": "1a27a549bc3ae1f5acb11f732a357094",
+      "sourceName": "contracts/PLM.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProductLifecycleManagement"
+      ]
+    }
+  }
+}
